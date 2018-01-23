@@ -21,7 +21,7 @@ public class CarLazy extends Car implements Lazy {
                         TableParameters.CarParam.DRIVER_ID);
                 return userDao.findById(userId);
             } catch (Exception e) {
-                logger.error(LogMessages.GET_DRIVER_FROM_CAR_LAZY_ERROR);
+                logger.error(e.getMessage() + " " + LogMessages.GET_DRIVER_FROM_CAR_LAZY_ERROR);
                 throw new Exception();
             }
         }

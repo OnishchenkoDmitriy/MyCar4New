@@ -16,9 +16,9 @@ public interface GlobalConstants {
     /**
      * price per km depends for classic car type
      */
-    Integer CLASSIC_PRICE = 30;
+    Integer CLASSIC_PRICE = 10;
     /**
      * price per km depends for premium car type
      */
-    Integer PREMIUM_PRICE = 50;
+    Integer PREMIUM_PRICE = 20;
 }

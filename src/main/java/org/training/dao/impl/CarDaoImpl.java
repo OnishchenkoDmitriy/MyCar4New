@@ -63,7 +63,7 @@ public class CarDaoImpl extends AbstractDao<Car> implements CarDao, UniqueEntry<
                 ps.setInt(7, car.getDriver().getId());
                 ps.executeUpdate();
             } catch (SQLException e) {
-                logger.error(LogMessages.CREATE_CAR_ERROR);
+                logger.error(e.getMessage() + " " + LogMessages.CREATE_CAR_ERROR);
             }
         }else {
             throw new EntryAlreadyExistException();
@@ -87,7 +87,7 @@ public class CarDaoImpl extends AbstractDao<Car> implements CarDao, UniqueEntry<
             ps.setInt(2, carId);
             ps.executeUpdate();
         } catch (SQLException e) {
-            logger.error(LogMessages.UPDATE_CAR_STATE_ERROR);
+            logger.error(e.getMessage() + " " + LogMessages.UPDATE_CAR_STATE_ERROR);
             throw new SQLException();
         }
     }

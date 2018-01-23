@@ -48,7 +48,7 @@ public class DiscountDaoImplTest {
         Connection connection = ConnectionPoolHolder.getConnection();
         try(DiscountDao discountDao = DaoFactory.getInstance().createDiscountDao(connection)){
             connection.setAutoCommit(false);
-            discountDao.deleteConcreteUserDiscount(Discounts.ADMIN_DISCOUNT.getId(), userId);
+            discountDao.deleteConcreteUserDiscount(Discounts.BY_ORDER_AMOUNT.getId(), userId);
             assertFalse(discountDao.findDiscountsByUserId(userId).contains(Discounts.BY_ORDER_AMOUNT));
             connection.rollback();
         }catch (Exception e){

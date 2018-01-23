@@ -10,7 +10,7 @@
 <section class="py-5">
     <div class="container">
         <h3>
-            <fmt:message key="order.accepted"/> ${currentOrder.price / 100} grn.
+            <fmt:message key="order.accepted"/> ${currentOrder.price} grn.
         </h3>
         <jsp:include page="../table/currentOrderTable.jsp"/>
         <br/>

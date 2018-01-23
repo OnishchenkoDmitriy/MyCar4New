@@ -23,7 +23,8 @@ public class LogoutCommand implements Command {
      */
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) throws IOException {
-        logger.info(LogMessageBuilder.INSTANCE.logOutInfo((String) request.getAttribute(RequestAttributes.USER_NAME)));
+        logger.info(LogMessageBuilder.INSTANCE.logOutInfo((String) request.getSession()
+                .getAttribute(RequestAttributes.USER_NAME)));
         request.getSession().invalidate();
         return JSPPages.INDEX_PAGE;
     }

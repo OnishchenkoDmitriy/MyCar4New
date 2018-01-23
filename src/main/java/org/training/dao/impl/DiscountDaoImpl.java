@@ -43,7 +43,7 @@ public class DiscountDaoImpl extends AbstractDao<Discounts> implements DiscountD
         try {
             executeQuery(query);
         } catch (SQLException e) {
-            logger.error(LogMessages.SET_USER_DISCOUNT_ERROR);
+            logger.error(e.getMessage() + " " + LogMessages.SET_USER_DISCOUNT_ERROR);
         }
     }
 
@@ -53,7 +53,7 @@ public class DiscountDaoImpl extends AbstractDao<Discounts> implements DiscountD
         try {
             executeQuery(query);
         } catch (SQLException e) {
-            logger.error(LogMessages.DELETE_USER_DISCOUNT_ERROR);
+            logger.error(e.getMessage() + " " + LogMessages.DELETE_USER_DISCOUNT_ERROR);
         }
     }
 
@@ -63,7 +63,7 @@ public class DiscountDaoImpl extends AbstractDao<Discounts> implements DiscountD
         try {
             executeQuery(query);
         } catch (SQLException e) {
-            logger.error(LogMessages.DELETE_ALL_USER_DISCOUNT_ERROR);
+            logger.error(e.getMessage() + " " + LogMessages.DELETE_ALL_USER_DISCOUNT_ERROR);
         }
     }
 

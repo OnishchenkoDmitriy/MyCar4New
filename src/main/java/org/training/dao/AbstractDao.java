@@ -93,7 +93,7 @@ public abstract class AbstractDao<T extends Entity<Integer>> implements Dao<T, I
         try (PreparedStatement statement = connection.prepareStatement(query)) {
             statement.executeUpdate();
         } catch (SQLException e) {
-            logger.error(LogMessageBuilder.INSTANCE.deleteFromTableError(tableName), e.getMessage());
+            logger.error(e.getMessage() + " " + LogMessageBuilder.INSTANCE.deleteFromTableError(tableName));
         }
     }
 
@@ -109,7 +109,7 @@ public abstract class AbstractDao<T extends Entity<Integer>> implements Dao<T, I
                 }
             }
         } catch (SQLException e) {
-            logger.error(LogMessages.FIND_OTHER_ID_FROM_TABLE_ERROR);
+            logger.error(e.getMessage() + " " + LogMessages.FIND_OTHER_ID_FROM_TABLE_ERROR);
             throw new SQLException();
         }
     }
@@ -130,7 +130,7 @@ public abstract class AbstractDao<T extends Entity<Integer>> implements Dao<T, I
                 }
             }
         } catch (SQLException e) {
-            logger.error(LogMessages.FIND_BY_QUERY_ERROR);
+            logger.error(e.getMessage() + " " + LogMessages.FIND_BY_QUERY_ERROR);
             throw new NoResultFromDBException();
         }
     }

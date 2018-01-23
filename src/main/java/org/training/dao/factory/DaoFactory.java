@@ -10,7 +10,7 @@ import java.sql.Connection;
  */
 public abstract class DaoFactory {
 
-    private static DaoFactory daoFactory;
+    private static volatile DaoFactory daoFactory;
 
     public abstract UserDao createUserDao(Connection connection);
     public abstract CarDao createCarDao(Connection connection);
@@ -19,8 +19,7 @@ public abstract class DaoFactory {
     public abstract DiscountDao createDiscountDao(Connection connection);
 
     /**
-     * Singleton template implementation for DaoFactory
-     * @return
+     * @return DaoFactory
      */
     public static DaoFactory getInstance(){
         if( daoFactory == null ){

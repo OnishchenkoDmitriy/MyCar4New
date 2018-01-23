@@ -60,7 +60,8 @@ public class CommandCreator {
                 new MakeOrderCommand(ServiceFactory.getInstance().createOrderService()));
         commandMap.put(CANCEL_ORDER_COMMAND,
                 new CancelOrderCommand(ServiceFactory.getInstance().createOrderService()));
-        commandMap.put(CONFIRM_ORDER_COMMAND, new ConfirmOrderCommand());
+        commandMap.put(CONFIRM_ORDER_COMMAND,
+                new ConfirmOrderCommand(ServiceFactory.getInstance().createOrderService()));
         commandMap.put(MY_ORDERS_PAGE_COMMAND,
                 new MyOrdersCommand(ServiceFactory.getInstance().createOrderService()));
 

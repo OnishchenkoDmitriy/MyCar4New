@@ -75,7 +75,7 @@ public class OrderDaoImpl extends AbstractDao<Order> implements OrderDao {
             ps.setInt(6, order.getArrivalAddress().getId());
             ps.executeUpdate();
         } catch (SQLException e) {
-            logger.error(LogMessages.CREATE_ORDER_ERROR);
+            logger.error(e.getMessage() + " " + LogMessages.CREATE_ORDER_ERROR);
             throw new SQLException();
         }
     }

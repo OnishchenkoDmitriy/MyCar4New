@@ -52,7 +52,7 @@ public class AddressDaoImpl extends AbstractDao<Address> implements AddressDao, 
                 ps.setString(3, address.getNumber());
                 ps.executeUpdate();
             } catch (SQLException e) {
-                logger.error(LogMessages.CREATE_ADDRESS_ERROR);
+                logger.error(e.getMessage() + " " + LogMessages.CREATE_ADDRESS_ERROR);
                 throw new SQLException();
             }
         }

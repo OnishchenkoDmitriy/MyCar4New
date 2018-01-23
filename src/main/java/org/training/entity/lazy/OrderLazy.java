@@ -26,7 +26,7 @@ public class OrderLazy extends Order implements Lazy {
                         TableParameters.OrderParam.DRIVER_ID);
                 return userDao.findById(userId);
             } catch (Exception e) {
-                logger.error(LogMessages.GET_DRIVER_FROM_ORDER_LAZY_ERROR);
+                logger.error(e.getMessage() + " " + LogMessages.GET_DRIVER_FROM_ORDER_LAZY_ERROR);
                 throw new Exception();
             }
         }
@@ -42,7 +42,7 @@ public class OrderLazy extends Order implements Lazy {
                         TableParameters.OrderParam.CLIENT_ID);
                 return userDao.findById(userId);
             } catch (Exception e) {
-                logger.error(LogMessages.GET_CLIENT_FROM_ORDER_LAZY_ERROR);
+                logger.error(e.getMessage() + " " + LogMessages.GET_CLIENT_FROM_ORDER_LAZY_ERROR);
                 throw new Exception();
             }
         }
@@ -58,7 +58,7 @@ public class OrderLazy extends Order implements Lazy {
                         TableParameters.OrderParam.CAR_ID);
                 return carDao.findById(carId);
             } catch (Exception e) {
-                logger.error(LogMessages.GET_CAR_FROM_ORDER_LAZY_ERROR);
+                logger.error(e.getMessage() + " " + LogMessages.GET_CAR_FROM_ORDER_LAZY_ERROR);
                 throw new Exception();
             }
         }
@@ -74,7 +74,7 @@ public class OrderLazy extends Order implements Lazy {
                         TableParameters.OrderParam.ARRIVAL_ADDRESS_ID);
                 return addressDao.findById(addressId);
             } catch (Exception e) {
-                logger.error(LogMessages.GET_ARRIVAL_ADDRESS_FROM_ORDER_LAZY_ERROR);
+                logger.error(e.getMessage() + " " + LogMessages.GET_ARRIVAL_ADDRESS_FROM_ORDER_LAZY_ERROR);
                 throw new Exception();
             }
         }
@@ -90,7 +90,7 @@ public class OrderLazy extends Order implements Lazy {
                         TableParameters.OrderParam.DEPARTURE_ADDRESS_ID);
                 return addressDao.findById(addressId);
             } catch (Exception e) {
-                logger.error(LogMessages.GET_ARRIVAL_DEPARTURE_FROM_ORDER_LAZY_ERROR);
+                logger.error(e.getMessage() + " " + LogMessages.GET_ARRIVAL_DEPARTURE_FROM_ORDER_LAZY_ERROR);
                 throw new Exception();
             }
         }

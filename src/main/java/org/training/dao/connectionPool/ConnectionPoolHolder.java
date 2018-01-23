@@ -19,7 +19,6 @@ public class ConnectionPoolHolder {
     private static volatile DataSource dataSource;
 
     /**
-     * Singleton template implementation
      * @return DataSource
      */
     private static DataSource getDataSource(){

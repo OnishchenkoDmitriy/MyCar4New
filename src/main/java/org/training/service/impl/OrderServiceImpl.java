@@ -37,7 +37,8 @@ public class OrderServiceImpl implements OrderService {
         try (CarDao carDao = daoFactory.createCarDao(connection);
              OrderDao orderDao = daoFactory.createOrderDao(connection);
              UserDao userDao = daoFactory.createUserDao(connection);
-             AddressDao addressDao = daoFactory.createAddressDao(connection)) {
+             AddressDao addressDao = daoFactory.createAddressDao(connection);
+             DiscountDao discountDao = daoFactory.createDiscountDao(connection)) {
 
             connection.setAutoCommit(false);
 
@@ -55,31 +56,24 @@ public class OrderServiceImpl implements OrderService {
             Address newArrivalAddress = addressDao.findAddressByStreetAndNumber(arrivalAddress.getStreet(),
                     arrivalAddress.getNumber());
 
+            Integer totalDiscount = OrderPriceGenerator.getTotalDiscountInPercent(discountDao, newClient.getId());
+            Integer orderPrice = OrderPriceGenerator.getOrderPrice(totalDiscount, car.getCarType());
+
             Order order = new Order.OrderBuilder()
                     .setDepartureAddress(newDepartureAddress)
                     .setArrivalAddress(newArrivalAddress)
-                    .setPrice(OrderPriceGenerator.getOrderPrice(newClient, car.getCarType()))
+                    .setPrice(orderPrice)
                     .setDriver(car.getDriver())
                     .setClient(newClient)
                     .setCar(car)
                     .build();
 
-
-            orderDao.create(order);
-            checkUserDiscounts(newClient);
-            Order newOrder = orderDao.findOrderByAllParameters(order.getPrice(),
-                    order.getClient().getId(),
-                    order.getDriver().getId(),
-                    order.getDepartureAddress().getId(),
-                    order.getArrivalAddress().getId()
-            );
-
             connection.commit();
-            return newOrder;
+            return order;
         } catch (SQLException e) {
             connection.rollback();
+            return null;
         }
-        return null;
     }
 
     @Override
@@ -95,6 +89,17 @@ public class OrderServiceImpl implements OrderService {
             connection.commit();
         } catch (Exception e) {
             connection.rollback();
+        }
+    }
+
+    @Override
+    public void confirmOrder(Order order) throws Exception {
+        Connection connection = ConnectionPoolHolder.getConnection();
+        try (CarDao carDao = DaoFactory.getInstance().createCarDao(connection);
+             OrderDao orderDao = DaoFactory.getInstance().createOrderDao(connection)) {
+            orderDao.create(order);
+            checkUserDiscounts(order.getClient());
+            carDao.updateCarState(order.getCar().getId(), Car.CarStates.FREE.toString());
         }
     }
 
@@ -128,6 +133,6 @@ public class OrderServiceImpl implements OrderService {
         } catch (Exception e) {
             logger.info(LogMessageBuilder.INSTANCE.userHasNoDiscountsYet(user));
         }
-
     }
+
 }

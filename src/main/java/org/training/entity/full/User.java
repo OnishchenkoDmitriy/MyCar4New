@@ -81,9 +81,6 @@ public class User implements Entity<Integer> {
 
         User user = (User) o;
 
-        System.out.println(this);
-        System.out.println(o);
-
         if (!firstName.equals(user.firstName)) return false;
         if (!lastName.equals(user.lastName)) return false;
         if (!phoneNumber.equals(user.phoneNumber)) return false;

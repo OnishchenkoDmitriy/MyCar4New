@@ -17,7 +17,7 @@
         <c:set var="count" value="${count + 1}" scope="page"/>
         <tr>
             <td><c:out value="${count}"/></td>
-            <td><c:out value="${order.price / 100}"/> grn.</td>
+            <td><c:out value="${order.price}"/> grn.</td>
             <td><c:out value="${order.client.firstName} ${order.client.lastName}"/></td>
             <td><c:out value="${order.departureAddress.street} ${order.departureAddress.number}"/></td>
             <td><c:out value="${order.arrivalAddress.street} ${order.arrivalAddress.number}"/></td>

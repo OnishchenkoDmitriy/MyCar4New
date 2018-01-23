@@ -1,0 +1,51 @@
+2018-01-23 09:37:34.173 LoginCommand - User DmitriyOnishchenko login system.
+2018-01-23 09:37:43.901 LoginCommand - User null logout system.
+2018-01-23 09:40:43.305 LoginCommand - New user ИвантестПоляковтест registered as client.
+2018-01-23 09:40:43.342 LoginCommand - User null logout system.
+2018-01-23 09:40:43.392 LoginCommand - User nullnull login system.
+2018-01-23 09:40:43.990 LoginCommand - User null confirmed an order
+2018-01-23 09:40:44.005 LoginCommand - User null canceled an order
+2018-01-23 09:40:44.074 LoginCommand - New user ИвантестПоляковтест registered as driver.
+2018-01-23 20:03:14.582 LoginCommand - User DmitriyOnishchenko login system.
+2018-01-23 20:04:30.294 LoginCommand - User DmitriyOnishchenko made an order
+2018-01-23 20:05:27.712 LoginCommand - User null canceled an order
+2018-01-23 20:06:14.589 LoginCommand - User DmitriyOnishchenko made an order
+2018-01-23 20:06:24.261 LoginCommand - User null confirmed an order
+2018-01-23 20:21:39.876 LoginCommand - User DmitriyOnishchenko login system.
+2018-01-23 20:22:22.977 LoginCommand - User DmitriyOnishchenko made an order
+2018-01-23 20:22:58.225 LoginCommand - User null confirmed an order
+2018-01-23 20:26:15.271 LoginCommand - User null logout system.
+2018-01-23 20:26:39.505 LoginCommand - User BogdanKovalchuk login system.
+2018-01-23 20:27:29.149 LoginCommand - User BogdanKovalchuk made an order
+2018-01-23 20:28:17.850 LoginCommand - User DmitriyOnishchenko login system.
+2018-01-23 20:34:56.865 LoginCommand - Не найдено ни одной свободной машини даного типа.
+2018-01-23 20:47:25.909 LoginCommand - User BogdanKovalchuk login system.
+2018-01-23 20:47:56.599 LoginCommand - Не найдено ни одной свободной машини даного типа.
+2018-01-23 20:48:28.256 LoginCommand - User BogdanKovalchuk made an order
+2018-01-23 20:49:08.657 LoginCommand - User Bogdan Kovalchuk confirmed an order
+2018-01-23 20:51:12.292 LoginCommand - User Bogdan Kovalchuk logout system.
+2018-01-23 20:51:37.220 LoginCommand - User BogdanKovalchuk login system.
+2018-01-23 20:52:08.920 LoginCommand - User BogdanKovalchuk made an order
+2018-01-23 20:54:03.744 LoginCommand - User Bogdan Kovalchuk confirmed an order
+2018-01-23 22:00:37.981 LoginCommand - User null confirmed an order
+2018-01-23 22:00:51.906 LoginCommand - User nullnull login system.
+2018-01-23 22:00:51.912 LoginCommand - User null logout system.
+2018-01-23 22:00:51.948 Dao - Duplicate entry '1-2' for key 'PRIMARY' Set user discount error.
+2018-01-23 22:00:51.966 LoginCommand - User null confirmed an order
+2018-01-23 22:00:51.990 LoginCommand - New user ИвантестПоляковтест registered as client.
+2018-01-23 22:00:51.993 LoginCommand - New user ИвантестПоляковтест registered as driver.
+2018-01-23 22:00:51.994 LoginCommand - User null canceled an order
+2018-01-23 22:02:59.500 LoginCommand - New user ИвантестПоляковтест registered as client.
+2018-01-23 22:02:59.833 LoginCommand - User nullnull login system.
+2018-01-23 22:02:59.864 Dao - Duplicate entry '1-2' for key 'PRIMARY' Set user discount error.
+2018-01-23 22:02:59.871 LoginCommand - New user ИвантестПоляковтест registered as driver.
+2018-01-23 22:03:00.022 LoginCommand - User null logout system.
+2018-01-23 22:03:00.043 LoginCommand - User null confirmed an order
+2018-01-23 22:03:00.070 LoginCommand - User null canceled an order
+2018-01-23 22:03:42.136 LoginCommand - New user ИвантестПоляковтест registered as driver.
+2018-01-23 22:03:42.160 Dao - Duplicate entry '1-2' for key 'PRIMARY' Set user discount error.
+2018-01-23 22:03:42.165 LoginCommand - User nullnull login system.
+2018-01-23 22:03:42.167 LoginCommand - User null logout system.
+2018-01-23 22:03:42.171 LoginCommand - User null confirmed an order
+2018-01-23 22:03:42.174 LoginCommand - User null canceled an order
+2018-01-23 22:03:42.178 LoginCommand - New user ИвантестПоляковтест registered as client.

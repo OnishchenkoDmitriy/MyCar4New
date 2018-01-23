@@ -38,7 +38,7 @@ public class UserDaoImpl extends AbstractDao<User> implements UserDao, UniqueEnt
                 ps.setString(6, user.getRole());
                 ps.executeUpdate();
             } catch (SQLException e) {
-                logger.error(LogMessages.CREATE_USER_ERROR, e.getMessage());
+                logger.error(e.getMessage() + " " + LogMessages.CREATE_USER_ERROR, e.getMessage());
                 throw new SQLException();
             }
         }

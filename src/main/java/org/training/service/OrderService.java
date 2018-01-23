@@ -12,6 +12,7 @@ public interface OrderService extends Service {
     Order makeOrder(User client, Address departureAddress,
                     Address arrivalAddress, String carType) throws Exception;
     void cancelOrder(Order order) throws SQLException;
+    void confirmOrder(Order order) throws Exception;
 
     List getAllOrders(User user) throws NoResultFromDBException;
     void checkUserDiscounts(User user);
