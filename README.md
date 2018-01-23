@@ -10,3 +10,10 @@ After that, the Customer is notified if a Taxi is found and what time of waiting
 Onishchenko Dmitriy
 # Mentor:
 Lubov Ivanova
+
+# How to run project:
+1. Istall maven http://www.apache-maven.ru/install.html
+2. In project directory open PowerShell
+3. Enter command "mvn tomcat7:run"
+4. Open browser and follow the link http://localhost:9999/
+
