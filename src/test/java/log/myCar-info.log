@@ -1,0 +1,24 @@
+2018-01-22 17:58:55.179 LoginCommand - User nullnull login system.
+2018-01-22 17:58:55.190 LoginCommand - User null logout system.
+2018-01-22 20:36:15.591 LoginCommand - New user ИвантестПоляковтест registered as driver.
+2018-01-22 20:36:15.664 LoginCommand - User nullnull login system.
+2018-01-22 20:36:15.667 LoginCommand - User null logout system.
+2018-01-22 20:36:15.674 LoginCommand - New user ИвантестПоляковтест registered as client.
+2018-01-23 01:00:12.615 LoginCommand - User null canceled an order
+2018-01-23 01:00:12.639 LoginCommand - User null confirmed an order
+2018-01-23 01:00:12.775 LoginCommand - User null logout system.
+2018-01-23 01:01:56.483 LoginCommand - User null canceled an order
+2018-01-23 01:01:56.496 LoginCommand - User null confirmed an order
+2018-01-23 01:01:56.582 LoginCommand - User null logout system.
+2018-01-23 01:02:09.581 LoginCommand - User null canceled an order
+2018-01-23 01:02:09.601 LoginCommand - User null confirmed an order
+2018-01-23 01:02:09.865 LoginCommand - New user ИвантестПоляковтест registered as driver.
+2018-01-23 01:02:09.870 LoginCommand - User nullnull login system.
+2018-01-23 01:02:09.872 LoginCommand - User null logout system.
+2018-01-23 01:02:09.876 LoginCommand - New user ИвантестПоляковтест registered as client.
+2018-01-23 01:02:24.962 LoginCommand - User null canceled an order
+2018-01-23 01:02:25.006 LoginCommand - User null confirmed an order
+2018-01-23 01:02:25.367 LoginCommand - New user ИвантестПоляковтест registered as driver.
+2018-01-23 01:02:25.376 LoginCommand - User nullnull login system.
+2018-01-23 01:02:25.378 LoginCommand - User null logout system.
+2018-01-23 01:02:25.384 LoginCommand - New user ИвантестПоляковтест registered as client.
