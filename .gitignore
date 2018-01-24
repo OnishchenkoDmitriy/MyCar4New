@@ -1,9 +1,13 @@
 target/
+log/
+
+
 !.mvn/wrapper/maven-wrapper.jar
 
 #src/main/java/com/hw/project/variable/
 
 .idea
+
 *.iws
 *.iml
 *.ipr
