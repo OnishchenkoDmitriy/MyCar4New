@@ -8,6 +8,7 @@ import org.training.entity.full.User;
 import javax.servlet.http.HttpServletRequest;
 
 public class GetEntityFromRequest {
+
     public static User getUserFromRequest(HttpServletRequest request) {
         String email = request.getParameter(RequestParameters.EMAIL);
         String firstName = request.getParameter(RequestParameters.FIRST_NAME);

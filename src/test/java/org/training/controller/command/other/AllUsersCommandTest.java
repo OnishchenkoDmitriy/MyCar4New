@@ -14,9 +14,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.util.List;
 
 import static org.junit.Assert.assertEquals;
-import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.verify;
-import static org.mockito.Mockito.when;
+import static org.mockito.Mockito.*;
 
 public class AllUsersCommandTest {
 
@@ -38,8 +36,8 @@ public class AllUsersCommandTest {
     @Test
     public void execute() throws Exception {
         when(userService.findAllUsers()).thenReturn(users);
+        doNothing().when(request).setAttribute(anyString(), any(List.class));
         String page = allUsersCommand.execute(request, response);
-        verify(request).setAttribute(RequestAttributes.ALL_USERS, users);
         assertEquals(page, JSPPages.ALL_USERS_PAGE);
     }
 

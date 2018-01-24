@@ -24,7 +24,6 @@ public interface RequestAttributes {
      */
     String MY_ORDERS = "orders";
     String CURRENT_ORDER = "currentOrder";
-    String ORDER = "order";
 
     /**
      * registration and authorization attributes
@@ -40,4 +39,7 @@ public interface RequestAttributes {
     String CAR_TYPE = "carType";
     String ALL_USERS = "users";
     String ALL_CARS = "cars";
+    String NUMBER_OF_PAGES = "numberOfPages";
+    String CURRENT_PAGE = "currentPage";
+    String FIRST_INDEX = "firstIndex";
 }

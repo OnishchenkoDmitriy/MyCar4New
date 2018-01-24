@@ -1,7 +1,7 @@
 <%@ include file="../util/addition.jsp"%>
 
 <form class="form-horizontal" id = "signInForm" action="${pageContext.request.contextPath}/my-car/login" method="post">
-    <c:if test="${informationMessage eq not null}">
+    <c:if test="${informationMessage != null}">
         <div class="alert alert-info">${informationMessage}</div>
     </c:if>
     <c:if test="${errorMessage != null}">

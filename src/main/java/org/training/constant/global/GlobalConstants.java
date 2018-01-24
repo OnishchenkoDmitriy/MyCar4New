@@ -21,4 +21,9 @@ public interface GlobalConstants {
      * price per km depends for premium car type
      */
     Integer PREMIUM_PRICE = 20;
+
+    /**
+     * Amount of entries in table per page (for pagination)
+     */
+    Integer ENTRY_PER_PAGE = 5;
 }

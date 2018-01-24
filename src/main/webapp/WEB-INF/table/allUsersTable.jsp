@@ -1,5 +1,5 @@
 <%@ include file="../util/addition.jsp" %>
-<c:set var="counter" value="0" scope="page"/>
+<c:set var="count" value="${firstIndex}" scope="page"/>
 <table id="allUsersTable" class="table table-condensed">
     <tr>
         <th><fmt:message key="number"/></th>
@@ -21,3 +21,17 @@
         </tr>
     </c:forEach>
 </table>
+
+<nav aria-label="Page navigation">
+    <ul class="pagination justify-content-center">
+        <c:forEach begin="1" end="${numberOfPages}">
+
+            <c:set var="pageCounter" value="${pageCounter + 1}" scope="page"/>
+            <form action="${pageContext.request.contextPath}/my-car/all_users" method="post">
+                <input type="hidden" value="${pageCounter}" name="currentPage">
+                <input style="margin: 2px" type="submit" class="btn btn-primary btn-lg" value="${pageCounter}">
+            </form>
+
+        </c:forEach>
+    </ul>
+</nav>

@@ -6,6 +6,7 @@
     <c:if test="${informationMessage != null}">
         <div class="alert alert-info">${informationMessage}</div>
     </c:if>
+
     <tr>
         <th><fmt:message key="number"/></th>
         <th><fmt:message key="price"/></th>

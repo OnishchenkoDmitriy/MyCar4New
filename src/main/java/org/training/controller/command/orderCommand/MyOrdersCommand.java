@@ -39,7 +39,8 @@ public class MyOrdersCommand implements Command {
         User user = (User) request.getSession().getAttribute(RequestAttributes.USER);
         if (user != null) {
             try {
-                List<Order> orders = orderService.getAllOrders(user);
+                List orders = orderService.getAllOrders(user);
+                if(orders.isEmpty()) throw new NoResultFromDBException();
                 request.setAttribute(RequestAttributes.MY_ORDERS, orders);
                 return JSPPages.MY_ORDERS_PAGE;
             } catch (NoResultFromDBException e) {
