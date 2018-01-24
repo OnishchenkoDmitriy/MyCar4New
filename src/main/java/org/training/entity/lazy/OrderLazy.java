@@ -27,7 +27,7 @@ public class OrderLazy extends Order implements Lazy {
                 return userDao.findById(userId);
             } catch (Exception e) {
                 logger.error(e.getMessage() + " " + LogMessages.GET_DRIVER_FROM_ORDER_LAZY_ERROR);
-                throw new Exception();
+                throw new RuntimeException();
             }
         }
         return null;
