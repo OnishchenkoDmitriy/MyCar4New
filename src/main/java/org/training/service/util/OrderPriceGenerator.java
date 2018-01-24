@@ -52,7 +52,7 @@ public class OrderPriceGenerator {
         }
 
         Integer orderPrice = distanceInKm * pricePerKm;
-        Integer discount = orderPrice * (totalDiscount / 100);
+        Float discount = orderPrice * ((float)totalDiscount / 100);
 
         return (int)Math.ceil(orderPrice - discount);
     }

@@ -29,13 +29,22 @@ public class OrderServiceImpl implements OrderService {
         return OrderServiceImplHolder.instance;
     }
 
+    /**
+     * Makes order for client. Search free car by type and set it state to busy.
+     * Put arrival and departure address to db.
+     * @param client client
+     * @param departureAddress departure address
+     * @param arrivalAddress arrival address
+     * @param carType car type
+     * @return
+     * @throws Exception
+     */
     @Override
     public Order makeOrder(User client, Address departureAddress,
                            Address arrivalAddress, String carType) throws Exception {
 
         Connection connection = ConnectionPoolHolder.getConnection();
         try (CarDao carDao = daoFactory.createCarDao(connection);
-             OrderDao orderDao = daoFactory.createOrderDao(connection);
              UserDao userDao = daoFactory.createUserDao(connection);
              AddressDao addressDao = daoFactory.createAddressDao(connection);
              DiscountDao discountDao = daoFactory.createDiscountDao(connection)) {
@@ -76,22 +85,30 @@ public class OrderServiceImpl implements OrderService {
         }
     }
 
+    /**
+     * Cancels order. Set car state is free.
+     * @param order order
+     * @throws SQLException
+     */
     @Override
     public void cancelOrder(Order order) throws SQLException {
         Connection connection = ConnectionPoolHolder.getConnection();
         try (OrderDao orderDao = DaoFactory.getInstance().createOrderDao(connection);
              CarDao carDao = DaoFactory.getInstance().createCarDao(connection);) {
             connection.setAutoCommit(false);
-
             carDao.updateCarState(order.getCar().getId(), Car.CarStates.FREE.toString());
-            orderDao.delete(order.getId());
-
+            //orderDao.delete(order.getId());
             connection.commit();
         } catch (Exception e) {
             connection.rollback();
         }
     }
 
+    /**
+     * Confirms order. Put order to db and set car state is free.
+     * @param order order
+     * @throws Exception
+     */
     @Override
     public void confirmOrder(Order order) throws Exception {
         Connection connection = ConnectionPoolHolder.getConnection();
@@ -103,6 +120,12 @@ public class OrderServiceImpl implements OrderService {
         }
     }
 
+    /**
+     * Finds all orders depends on user role.
+     * @param user
+     * @return all orders by user id
+     * @throws NoResultFromDBException
+     */
     @Override
     public List getAllOrders(User user) throws NoResultFromDBException {
         Connection connection = ConnectionPoolHolder.getConnection();
@@ -119,6 +142,13 @@ public class OrderServiceImpl implements OrderService {
         }
     }
 
+    /**
+     * Checks user discounts.
+     * Deletes discount by order amount if it was used,
+     * or set discount bu order amount every fourth order,
+     * so user can use this discount in next order.
+     * @param user
+     */
     @Override
     public void checkUserDiscounts(User user) {
         Connection connection = ConnectionPoolHolder.getConnection();

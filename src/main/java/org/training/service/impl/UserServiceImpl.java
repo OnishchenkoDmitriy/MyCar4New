@@ -30,6 +30,12 @@ public class UserServiceImpl implements UserService {
         return UserServiceImplHolder.instance;
     }
 
+    /**
+     * Finds user by email
+     * @param email
+     * @return
+     * @throws NoResultFromDBException
+     */
     @Override
     public User findByEmail(String email) throws NoResultFromDBException {
         Connection connection = ConnectionPoolHolder.getConnection();
@@ -44,6 +50,11 @@ public class UserServiceImpl implements UserService {
         }
     }
 
+    /**
+     * User registration
+     * @param user user
+     * @throws Exception
+     */
     @Override
     public void registerUser(User user) throws Exception {
         Connection connection = ConnectionPoolHolder.getConnection();
@@ -56,6 +67,12 @@ public class UserServiceImpl implements UserService {
         }
     }
 
+    /**
+     * Driver registration
+     * @param driver driver
+     * @param car car
+     * @throws SQLException
+     */
     @Override
     public void registerDriver(User driver, Car car) throws SQLException {
         driver.setRole(User.Roles.DRIVER.toString());
@@ -75,6 +92,11 @@ public class UserServiceImpl implements UserService {
         }
     }
 
+    /**
+     * Deletes driver by id
+     * @param id driver id
+     * @throws SQLException
+     */
     @Override
     public void deleteDriverById(Integer id) throws SQLException {
         Connection connection = ConnectionPoolHolder.getConnection();
@@ -90,6 +112,11 @@ public class UserServiceImpl implements UserService {
         }
     }
 
+    /**
+     * Deletes user by id
+     * @param id user id
+     * @throws SQLException
+     */
     @Override
     public void deleteUserById(Integer id) throws SQLException {
         Connection connection = ConnectionPoolHolder.getConnection();
@@ -105,6 +132,11 @@ public class UserServiceImpl implements UserService {
         }
     }
 
+    /**
+     * Finds all users
+     * @return
+     * @throws NoResultFromDBException
+     */
     @Override
     public List<User> findAllUsers() throws NoResultFromDBException {
         Connection connection = ConnectionPoolHolder.getConnection();
@@ -116,6 +148,11 @@ public class UserServiceImpl implements UserService {
         }
     }
 
+    /**
+     * Finds all cars
+     * @return
+     * @throws NoResultFromDBException
+     */
     @Override
     public List<Car> findAllCars() throws NoResultFromDBException {
         Connection connection = ConnectionPoolHolder.getConnection();
@@ -127,6 +164,12 @@ public class UserServiceImpl implements UserService {
         }
     }
 
+    /**
+     * Finds car by number
+     * @param number
+     * @return
+     * @throws NoResultFromDBException
+     */
     @Override
     public Car findCarByNumber(String number) throws NoResultFromDBException {
         Connection connection = ConnectionPoolHolder.getConnection();
