@@ -32,6 +32,7 @@ public interface RequestAttributes {
     String LOG_OUT = "logOut";
     String LANGUAGE = "language";
     String NO_LANGUAGE = "isLanguage";
+    String LOGGED_USERS = "LOGGED_USERS";
 
     /**
      * result lists attributes

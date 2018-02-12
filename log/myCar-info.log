@@ -1,106 +1,39 @@
-2018-01-23 09:37:34.173 LoginCommand - User DmitriyOnishchenko login system.
-2018-01-23 09:37:43.901 LoginCommand - User null logout system.
-2018-01-23 09:40:43.305 LoginCommand - New user ИвантестПоляковтест registered as client.
-2018-01-23 09:40:43.342 LoginCommand - User null logout system.
-2018-01-23 09:40:43.392 LoginCommand - User nullnull login system.
-2018-01-23 09:40:43.990 LoginCommand - User null confirmed an order
-2018-01-23 09:40:44.005 LoginCommand - User null canceled an order
-2018-01-23 09:40:44.074 LoginCommand - New user ИвантестПоляковтест registered as driver.
-2018-01-23 20:03:14.582 LoginCommand - User DmitriyOnishchenko login system.
-2018-01-23 20:04:30.294 LoginCommand - User DmitriyOnishchenko made an order
-2018-01-23 20:05:27.712 LoginCommand - User null canceled an order
-2018-01-23 20:06:14.589 LoginCommand - User DmitriyOnishchenko made an order
-2018-01-23 20:06:24.261 LoginCommand - User null confirmed an order
-2018-01-23 20:21:39.876 LoginCommand - User DmitriyOnishchenko login system.
-2018-01-23 20:22:22.977 LoginCommand - User DmitriyOnishchenko made an order
-2018-01-23 20:22:58.225 LoginCommand - User null confirmed an order
-2018-01-23 20:26:15.271 LoginCommand - User null logout system.
-2018-01-23 20:26:39.505 LoginCommand - User BogdanKovalchuk login system.
-2018-01-23 20:27:29.149 LoginCommand - User BogdanKovalchuk made an order
-2018-01-23 20:28:17.850 LoginCommand - User DmitriyOnishchenko login system.
-2018-01-23 20:34:56.865 LoginCommand - Не найдено ни одной свободной машини даного типа.
-2018-01-23 20:47:25.909 LoginCommand - User BogdanKovalchuk login system.
-2018-01-23 20:47:56.599 LoginCommand - Не найдено ни одной свободной машини даного типа.
-2018-01-23 20:48:28.256 LoginCommand - User BogdanKovalchuk made an order
-2018-01-23 20:49:08.657 LoginCommand - User Bogdan Kovalchuk confirmed an order
-2018-01-23 20:51:12.292 LoginCommand - User Bogdan Kovalchuk logout system.
-2018-01-23 20:51:37.220 LoginCommand - User BogdanKovalchuk login system.
-2018-01-23 20:52:08.920 LoginCommand - User BogdanKovalchuk made an order
-2018-01-23 20:54:03.744 LoginCommand - User Bogdan Kovalchuk confirmed an order
-2018-01-23 22:00:37.981 LoginCommand - User null confirmed an order
-2018-01-23 22:00:51.906 LoginCommand - User nullnull login system.
-2018-01-23 22:00:51.912 LoginCommand - User null logout system.
-2018-01-23 22:00:51.948 Dao - Duplicate entry '1-2' for key 'PRIMARY' Set user discount error.
-2018-01-23 22:00:51.966 LoginCommand - User null confirmed an order
-2018-01-23 22:00:51.990 LoginCommand - New user ИвантестПоляковтест registered as client.
-2018-01-23 22:00:51.993 LoginCommand - New user ИвантестПоляковтест registered as driver.
-2018-01-23 22:00:51.994 LoginCommand - User null canceled an order
-2018-01-23 22:02:59.500 LoginCommand - New user ИвантестПоляковтест registered as client.
-2018-01-23 22:02:59.833 LoginCommand - User nullnull login system.
-2018-01-23 22:02:59.864 Dao - Duplicate entry '1-2' for key 'PRIMARY' Set user discount error.
-2018-01-23 22:02:59.871 LoginCommand - New user ИвантестПоляковтест registered as driver.
-2018-01-23 22:03:00.022 LoginCommand - User null logout system.
-2018-01-23 22:03:00.043 LoginCommand - User null confirmed an order
-2018-01-23 22:03:00.070 LoginCommand - User null canceled an order
-2018-01-23 22:03:42.136 LoginCommand - New user ИвантестПоляковтест registered as driver.
-2018-01-23 22:03:42.160 Dao - Duplicate entry '1-2' for key 'PRIMARY' Set user discount error.
-2018-01-23 22:03:42.165 LoginCommand - User nullnull login system.
-2018-01-23 22:03:42.167 LoginCommand - User null logout system.
-2018-01-23 22:03:42.171 LoginCommand - User null confirmed an order
-2018-01-23 22:03:42.174 LoginCommand - User null canceled an order
-2018-01-23 22:03:42.178 LoginCommand - New user ИвантестПоляковтест registered as client.
-2018-01-23 23:59:00.282 LoginCommand - User DmitriyOnishchenko login system.
-2018-01-24 00:26:44.344 CommandCreator - Unknown command. Command name: all_users/
-2018-01-24 00:26:48.017 CommandCreator - Unknown command. Command name: all_users/
-2018-01-24 00:26:50.364 CommandCreator - Unknown command. Command name: all_users/
-2018-01-24 00:26:52.881 CommandCreator - Unknown command. Command name: all_users/
-2018-01-24 00:27:16.341 CommandCreator - Unknown command. Command name: all_users/2
-2018-01-24 00:27:19.109 CommandCreator - Unknown command. Command name: all_users/3
-2018-01-24 00:27:21.595 CommandCreator - Unknown command. Command name: all_users/1
-2018-01-24 00:28:28.773 CommandCreator - Unknown command. Command name: all_users/3
-2018-01-24 00:28:37.731 CommandCreator - Unknown command. Command name: all_users/2
-2018-01-24 00:47:56.520 LoginCommand - User DmitriyOnishchenko login system.
-2018-01-24 00:55:22.708 LoginCommand - User DmitriyOnishchenko login system.
-2018-01-24 00:58:10.935 LoginCommand - User DmitriyOnishchenko login system.
-2018-01-24 01:01:26.797 LoginCommand - User DmitriyOnishchenko login system.
-2018-01-24 01:05:03.848 LoginCommand - User DmitriyOnishchenko login system.
-2018-01-24 01:29:21.134 LoginCommand - User DmitriyOnishchenko login system.
-2018-01-24 01:35:18.000 LoginCommand - User DmitriyOnishchenko login system.
-2018-01-24 01:36:10.369 LoginCommand - User DmitriyOnishchenko login system.
-2018-01-24 01:40:07.100 LoginCommand - User DmitriyOnishchenko login system.
-2018-01-24 01:43:33.927 LoginCommand - User Dmitriy Onishchenko logout system.
-2018-01-24 01:46:16.639 Dao - Column 'type' cannot be null Create car entry error.
-2018-01-24 01:46:16.641 LoginCommand - New user ВикторияВолочкова registered as driver.
-2018-01-24 01:46:32.053 LoginCommand - User ВикторияВолочкова login system.
-2018-01-24 01:49:35.305 LoginCommand - User Виктория Волочкова logout system.
-2018-01-24 01:49:41.290 LoginCommand - User DmitriyOnishchenko login system.
-2018-01-24 01:53:05.397 LoginCommand - User Dmitriy Onishchenko logout system.
-2018-01-24 01:53:15.997 LoginCommand - User ВикторияВолочкова login system.
-2018-01-24 01:59:30.973 LoginCommand - User ВикторияВолочкова login system.
-2018-01-24 02:00:13.967 LoginCommand - User Виктория Волочкова logout system.
-2018-01-24 02:00:20.938 LoginCommand - User DmitriyOnishchenko login system.
-2018-01-24 02:07:07.781 LoginCommand - User DmitriyOnishchenko login system.
-2018-01-24 02:09:47.607 LoginCommand - User DmitriyOnishchenko login system.
-2018-01-24 02:19:49.411 LoginCommand - User DmitriyOnishchenko login system.
-2018-01-24 02:24:01.613 LoginCommand - New user ИвантестПоляковтест registered as driver.
-2018-01-24 02:24:01.774 LoginCommand - User nullnull login system.
-2018-01-24 02:24:01.780 LoginCommand - New user ИвантестПоляковтест registered as client.
-2018-01-24 02:24:01.899 LoginCommand - User null canceled an order
-2018-01-24 02:24:02.896 LoginCommand - User null confirmed an order
-2018-01-24 02:24:02.910 LoginCommand - User null logout system.
-2018-01-24 02:24:02.944 Dao - Duplicate entry '1-2' for key 'PRIMARY' Set user discount error.
-2018-01-24 02:28:16.359 LoginCommand - User null confirmed an order
-2018-01-24 02:28:16.409 LoginCommand - New user ИвантестПоляковтест registered as driver.
-2018-01-24 02:28:16.415 LoginCommand - User nullnull login system.
-2018-01-24 02:28:16.510 LoginCommand - User null canceled an order
-2018-01-24 02:28:16.512 LoginCommand - User null logout system.
-2018-01-24 02:28:16.544 Dao - Duplicate entry '1-2' for key 'PRIMARY' Set user discount error.
-2018-01-24 02:28:16.625 LoginCommand - New user ИвантестПоляковтест registered as client.
-2018-01-24 02:28:48.334 LoginCommand - User null canceled an order
-2018-01-24 02:28:48.345 LoginCommand - User null confirmed an order
-2018-01-24 02:28:48.492 LoginCommand - New user ������������������� registered as driver.
-2018-01-24 02:28:48.498 LoginCommand - User nullnull login system.
-2018-01-24 02:28:48.501 LoginCommand - User null logout system.
-2018-01-24 02:28:48.506 LoginCommand - New user ������������������� registered as client.
-2018-01-24 02:28:48.960 Dao - Duplicate entry '1-2' for key 'PRIMARY' Set user discount error.
-2018-01-24 02:30:10.463 LoginCommand - User DmitriyOnishchenko login system.
+2018-01-25 09:15:43.003 LoginCommand - User DmitriyOnishchenko login system.
+2018-01-25 09:46:48.315 LoginCommand - User null canceled an order
+2018-01-25 09:46:48.580 LoginCommand - User nullnull login system.
+2018-01-25 09:46:48.596 LoginCommand - User null logout system.
+2018-01-25 09:46:48.596 LoginCommand - New user ИвантестПоляковтест registered as client.
+2018-01-25 09:46:48.596 LoginCommand - User null confirmed an order
+2018-01-25 09:46:48.612 LoginCommand - New user ИвантестПоляковтест registered as driver.
+2018-01-25 10:09:37.217 LoginCommand - New user НиколайИванов registered as client.
+2018-01-25 10:10:56.295 LoginCommand - User НиколайИванов login system.
+2018-01-25 10:11:55.559 LoginCommand - User НиколайИванов made an order
+2018-01-25 10:12:20.580 LoginCommand - User null canceled an order
+2018-01-25 10:12:42.911 LoginCommand - User НиколайИванов login system.
+2018-01-25 10:13:47.695 LoginCommand - User НиколайИванов made an order
+2018-01-25 10:13:54.435 LoginCommand - User НиколайИванов made an order
+2018-01-25 10:15:22.289 LoginCommand - User Николай Иванов confirmed an order
+2018-01-25 10:15:33.482 LoginCommand - User Николай Иванов logout system.
+2018-01-25 10:15:46.713 LoginCommand - User BogdanKovalchuk login system.
+2018-01-25 10:16:08.255 LoginCommand - User Николай Иванов logout system.
+2018-01-25 10:16:12.701 LoginCommand - User IvanGromov login system.
+2018-01-25 10:16:46.643 LoginCommand - User Ivan Gromov logout system.
+2018-01-25 10:16:53.902 LoginCommand - User DmitriyOnishchenko login system.
+2018-01-25 10:45:06.185 LoginCommand - User Dmitriy Onishchenko logout system.
+2018-01-25 10:47:52.914 Dao - Column 'type' cannot be null Create car entry error.
+2018-01-25 10:47:52.923 LoginCommand - New user БогданЛапкин registered as driver.
+2018-01-25 10:47:56.477 Dao - Column 'type' cannot be null Create car entry error.
+2018-01-25 10:47:56.480 LoginCommand - New user БогданЛапкин registered as driver.
+2018-01-29 12:54:38.114 LoginCommand - User ���������������� login system.
+2018-01-29 12:58:07.456 LoginCommand - User ��������� ������� logout system.
+2018-02-13 00:44:11.838 LoginCommand - User DmitriyOnishchenko login system.
+2018-02-13 00:44:14.781 LoginCommand - User Dmitriy Onishchenko logout system.
+2018-02-13 00:44:21.459 LoginCommand - User DmitriyOnishchenko login system.
+2018-02-13 01:15:57.322 CommandCreator - Unknown command. Command name: login
+2018-02-13 01:21:47.728 LoginCommand - User DmitriyOnishchenko login system.
+2018-02-13 01:23:28.858 LoginCommand - User DmitriyOnishchenko login system.
+2018-02-13 01:25:04.111 LoginCommand - User Dmitriy Onishchenko logout system.
+2018-02-13 01:28:14.143 LoginCommand - User DmitriyOnishchenko login system.
+2018-02-13 01:28:55.846 LoginCommand - User DmitriyOnishchenko login system.
+2018-02-13 01:29:47.273 LoginCommand - User DmitriyOnishchenko login system.
+2018-02-13 01:31:00.478 LoginCommand - User DmitriyOnishchenko login system.
