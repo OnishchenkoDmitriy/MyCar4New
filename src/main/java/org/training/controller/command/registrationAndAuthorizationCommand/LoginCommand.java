@@ -14,6 +14,7 @@ import org.training.util.logUtil.LogMessageBuilder;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 /**
@@ -55,7 +56,7 @@ public class LoginCommand implements Command {
             List<String> loggedUsers = (List<String>) request.getSession().
                     getServletContext().getAttribute(RequestAttributes.LOGGED_USERS);
             if(loggedUsers == null){
-                loggedUsers = new ArrayList<>();
+                loggedUsers = new LinkedList<>();
             }else{
                 User finalUser = user;
                 if(loggedUsers.stream().anyMatch(s -> finalUser.getEmail().equals(s))){

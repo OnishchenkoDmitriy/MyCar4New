@@ -12,6 +12,7 @@ import java.sql.Connection;
 
 public class CarLazy extends Car implements Lazy {
 
+
     @Override
     public User getDriver() throws Exception {
         if (super.getDriver() == null) {
@@ -19,12 +20,14 @@ public class CarLazy extends Car implements Lazy {
             try (UserDao userDao = daoFactory.createUserDao(connection)) {
                 Integer userId = userDao.findForeignKeyInTable(TableName.CAR_TABLE, super.getId().toString(),
                         TableParameters.CarParam.DRIVER_ID);
-                return userDao.findById(userId);
+                User newDriver = userDao.findById(userId);
+                super.setDriver(newDriver);
+                return newDriver;
             } catch (Exception e) {
                 logger.error(e.getMessage() + " " + LogMessages.GET_DRIVER_FROM_CAR_LAZY_ERROR);
                 throw new RuntimeException();
             }
         }
-        return null;
+        return super.getDriver();
     }
 }
